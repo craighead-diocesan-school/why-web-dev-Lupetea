@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
 <head>
+  <meta charset="UTF-8" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" />
-  <title>Web Dev</title>
+  <title>Web Dev opportunities</title>
 </head>
 
 <body>
@@ -19,6 +20,7 @@
   </nav>
 
   <main>
+    <h2></h2>
     <p>Web development can take you many places in the world and your career. Here are just some of the opportunities you'll have.</p>
     <ul>
       <li>You can reach an enormous audience through the web because clients and customers can use any device they want to access your applications.</li>
@@ -26,6 +28,8 @@
       <li>You can earn a great salary - more than 400 jobs on seek.co.nz offering over $100k at the time of writing.</li>
       <li>You can work remotely from anywhere in the world.</li>
     </ul>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY5gXkkbY58_E004AgplDREQIwN5URr_1dww&usqp=CAU" alt="Html" />
   </main>
 
   <footer>
@@ -42,11 +46,11 @@
     }
     a {
       text-decoration: none;
-      border: solid #11416c;
-      background-color: hwb(58 58% 6%);
+      border: solid #ffffff;
+      background-color: hwb(217 11% 49%);
       margin: 5;
       text-align: center;
-      color: #1c2d6a;
+      color: #d4dac5;
       display: block;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: larger;
@@ -58,7 +62,7 @@
       color: #1276a8;
       font-size: large;
       font-weight: bold;
-      margin-top: 2.5em;
+      margin-top: 1.5em;
       margin-left: 2.5em;
       padding-right: 3.5;
     }
@@ -82,7 +86,36 @@
       margin-top: 25;
       border-color: #c95000;
       border-style: dashed;
-      margin-left: 375;
+      margin-left: 16.5em;
+    }
+    body {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAA1BMVEX//nojDV0mAAAAR0lEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GxYgAAb0jQ/cAAAAASUVORK5CYII=");
+    }
+
+    body {
+      display: grid;
+      grid:
+        " .    h    h  " 4em
+        " n    m    m  " 5em
+        " f    f    f  " auto
+        / 1fr 5fr 1fr;
+    }
+
+    header {
+      grid-area: h;
+    }
+    nav {
+      grid-area: n;
+      margin-bottom: 34em;
+      margin-right: 3em;
+    }
+    main {
+      grid-area: m;
+      margin-top: 2em;
+    }
+    footer {
+      grid-area: f;
+      margin-top: 20em;
     }
   </style>
 </body>
