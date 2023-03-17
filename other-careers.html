@@ -1,4 +1,10 @@
-<head> </head>
+<!DOCTYPE html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" />
+  <title>Other Coding Careers</title>
+</head>
 
 <body>
   <header>
@@ -12,7 +18,9 @@
   </nav>
 
   <main>
-    <h2>Web dev is a great start but it's only one of many different careers in digital technologies. Here are some of the others.</h2>
+    <h2>Other Opportunities in Coding</h2>
+
+    <p>Web dev is a great start but it's only one of many different careers in digital technologies. Here are some of the others.</p>
 
     <ul>
       <li>Application developer</li>
@@ -32,15 +40,15 @@
   <style>
     h1 {
       text-align: center;
-      background-color: #165416;
+      background-color: #bb4067;
       color: #d3d3b2;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: xx-large;
     }
     a {
       text-decoration: none;
-      border: solid #165416;
-      background-color: #b99b6b;
+      border: solid #bfa2ac;
+      background-color: #ce4a6b;
       margin: 5;
       text-align: center;
       color: #f1dbbf;
@@ -51,17 +59,24 @@
     }
 
     h2 {
+      text-align: center;
+      background-color: #ce4764;
+      color: #d3d3b2;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: #698269;
-      font-size: large;
-      font-weight: bold;
+      font-size: x-large;
     }
+
     li {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       color: #b48231;
       list-style-type: disc;
     }
-
+    p {
+      font-family: Verdana, Tahoma, sans-serif;
+      color: #bc404a;
+      font-size: large;
+      font-weight: bold;
+    }
     a:hover {
       color: #d7e9b9;
       background-color: #337310;
@@ -75,6 +90,32 @@
       border-color: #0d7530;
       border-style: dashed;
       margin-left: 375;
+    }
+
+    body {
+      display: grid;
+      grid:
+        " .    h    h  " 4em
+        " n    m    m  " 5em
+        " f    f    f  " auto
+        / 1fr 5fr 1fr;
+    }
+
+    header {
+      grid-area: h;
+    }
+    nav {
+      grid-area: n;
+      margin-bottom: 34em;
+      margin-right: 3em;
+    }
+    main {
+      grid-area: m;
+      margin-top: 2em;
+    }
+    footer {
+      grid-area: f;
+      margin-top: 20em;
     }
   </style>
 </body>
