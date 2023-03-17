@@ -1,4 +1,10 @@
-<head> </head>
+<!DOCTYPE html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" />
+  <title>Web Dev</title>
+</head>
 
 <body>
   <header>
@@ -12,6 +18,8 @@
   </nav>
 
   <main>
+    <h2>Why Web Dev is important</h2>
+
     <p>There are plenty of way to learn coding, but here are some reasons why we focus on web dev.</p>
 
     <ul>
@@ -21,7 +29,7 @@
       <li>Web dev has loads of transferrable skills to other areas, from project management to marketing to accounting to entrepeneurship.</li>
     </ul>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="Html" />
   </main>
 
   <footer>
@@ -33,8 +41,16 @@
       text-align: center;
       background-color: #c62344;
       color: #ffffff;
+      font-family: monospace;
+      font-size: xxx-Large;
+    }
+
+    h2 {
+      text-align: center;
+      background-color: #ce4764;
+      color: #eaead9;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 50;
+      font-size: large;
     }
     a {
       text-decoration: none;
@@ -50,7 +66,7 @@
     }
 
     p {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: Verdana, Tahoma, sans-serif;
       color: #bc404a;
       font-size: large;
       font-weight: bold;
@@ -66,14 +82,45 @@
       background-color: #c41d1d;
     }
     img {
-      width: 500;
-      height: 500;
+      width: 15em;
+      height: 15em;
       padding-right: 0.5;
       padding-left: 0.5;
       margin-top: 25;
-      border-color: #2b44a0;
+      border-color: #cc5367;
       border-style: dashed;
-      margin-left: 375;
+      margin-left: 17em;
+    }
+
+    body {
+      background-image: url("https://media.istockphoto.com/id/1370544962/photo/white-paper-background-fibrous-cardboard-texture-for-scrapbooking.jpg?b=1&s=170667a&w=0&k=20&c=xr9AiLxrwsEeG2heLhc7tGqgBYOtdQBb1EH2LLETxRc=");
+    }
+
+    body {
+      display: grid;
+      grid:
+        " n    h    h  " 4em
+        " m   m    m  " 5em
+        " f    f    f  " auto
+        / 1fr 5fr 1fr;
+    }
+
+    header {
+      grid-area: h;
+    }
+    nav {
+      grid-area: n;
+      margin-top: 3em;
+      margin-right: 3em;
+    }
+    main {
+      grid-area: m;
+      margin-top: 2em;
+      margin-left: 11em;
+    }
+    footer {
+      grid-area: f;
+      margin-top: 45em;
     }
   </style>
 </body>
